@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { getAllPokemons, getPokemonDetails } from '../services/api';
+import { toast } from 'react-toastify';
 
 export const usePokemonStore = create((set) => ({
   pokemons: [],
@@ -13,7 +14,7 @@ export const usePokemonStore = create((set) => ({
         set({ pokemons: data.results });
       })
       .catch((error) => {
-        console.error(error);
+        toast.error(error.message);
       });
   },
 
@@ -23,7 +24,7 @@ export const usePokemonStore = create((set) => ({
         set({ selectedPokemon: data });
       })
       .catch((error) => {
-        console.error(error);
+        toast.error(error.message);
       });
   },
 

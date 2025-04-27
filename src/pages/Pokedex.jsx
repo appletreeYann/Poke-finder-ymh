@@ -3,6 +3,7 @@ import { usePokemonStore } from "../stores/usePokemonStore";
 import { PokemonCard } from "../components/PokemonCard";
 import { PokemonModal } from "../components/PokemonModal";
 import { Pagination } from "../components/Pagination";
+import { ToastContainer, Bounce } from "react-toastify";
 
 export const Pokedex = () => {
   const {
@@ -56,6 +57,20 @@ export const Pokedex = () => {
           onClose={clearSelectedPokemon}
         />
       )}
+
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+        transition={Bounce}
+        />
     </div>
   );
 };
