@@ -1,12 +1,18 @@
-# React + Vite
+# Bienvenido a mi Pokedex
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este poryecto permite visualizar una lista de los primeros 150 pokemons listados con un paginador de 50 elementos
 
-Currently, two official plugins are available:
+Al hacer click en un pokemon, se despliega una tarjeta mostrando la información mas relevante del pokemon
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+# Tecnologías utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- React Router DOM para las rutas internas
+- Zustand para el manejo del estado global
+- Tailwind CSS para los estilos CSS
+- Fetch API para las llamada a la API pública
+
+# Todos los datos se consultaron de la api pública: 
+
+https://pokeapi.co/api/v2/
