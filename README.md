@@ -1,6 +1,6 @@
 # Bienvenido a mi Pokedex
 
-Este poryecto permite visualizar una lista de los primeros 150 pokemons listados con un paginador de 50 elementos
+Este proyecto permite visualizar una lista de los primeros 150 pokemons listados con un paginador de 50 elementos
 
 Al hacer click en un pokemon, se despliega una tarjeta mostrando la información mas relevante del pokemon
 
